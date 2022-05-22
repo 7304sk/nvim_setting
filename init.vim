@@ -1,4 +1,4 @@
-source .vimrc
+source ~/.config/nvim/.vimrc
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
