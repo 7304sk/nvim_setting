@@ -20,6 +20,7 @@ cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Co
 
 then import this repositoy in the following directory
 ```
-mkdir ~/.config/nvim/
-cd ~/.config/nvim/
+cd ~/.config/
+git clone git@github.com:7304sk/nvim_setting.git
+mv nvim_setting/ nvim/
 ```
