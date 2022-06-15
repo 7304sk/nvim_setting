@@ -8,7 +8,7 @@ set fenc=utf-8
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
-set bomb
+set nobomb
 set binary
 set ttyfast
 set backspace=indent,eol,start
