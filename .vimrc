@@ -3,7 +3,6 @@ if has('vim_starting')
     set nocompatible
 endif
 
-" vi off
 set fenc=utf-8
 set encoding=utf-8
 set fileencoding=utf-8
@@ -43,3 +42,18 @@ set noerrorbells visualbell t_vb=
 set clipboard+=unnamedplus
 set mouse=a
 set whichwrap=b,s,h,l,<,>,[,]
+if has('persistent_undo')
+  set undofile
+endif
+
+" keymap
+nnoremap ; :
+nnoremap : ;
+inoremap <C-s> <Esc>:w<CR>
+nnoremap <C-s> :w<CR>
+nnoremap <Space>z :undo<CR>
+nnoremap <Space>y :redo<CR>
+nnoremap <silent> <Space>e <Esc>
+nnoremap <silent> <Space><Space> :NERDTreeToggle<CR>
+nnoremap <silent> <Space>f :let @/ = '\<' . expand('<cword>') . '\>'<CR>:set hlsearch<CR>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

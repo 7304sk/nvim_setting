@@ -1,6 +1,5 @@
+" Load vimrc
 source ~/.config/nvim/.vimrc
-
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 " dein.vim
 if &compatible
@@ -21,3 +20,7 @@ if dein#check_install()
 endif
 filetype plugin indent on
 syntax enable
+
+" Set up plugin
+let NERDTreeShowHidden = 1
+autocmd VimEnter * execute 'NERDTree'
